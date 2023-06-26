@@ -9,6 +9,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+:root {
+  --gold-color: #beb499;
+}
 @font-face {
   font-family: "manrope";
   src: url(./fonts/Manrope-Regular.woff);
@@ -150,4 +153,46 @@ nav {
 }
 .index_section_1_main :is(div, h1, p, a) {
   margin-left: 9rem;
+}
+.index_section_2 {
+  margin-bottom: 4.6rem;
+}
+.index_section_2_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.index_section_2_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section_2_img img {
+  width: 100%;
+  height: auto;
+}
+.section_2_img {
+  position: relative;
+}
+.section_2_img::after {
+  position: absolute;
+  content: "";
+  background: transparent linear-gradient(90deg, #ffffff00 0%, #ffffff 100%) 0%
+    0% no-repeat padding-box;
+  z-index: 100;
+
+  inset: 0;
+  opacity: 1;
+}
+
+.index_section_3 {
+  display: flex;
+  justify-content: center;
+}
+.index_section_3_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.index_section_3_container img {
+  max-width: 800px;
 }

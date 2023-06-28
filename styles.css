@@ -257,11 +257,10 @@ nav {
   font-weight: 400;
   margin-bottom: 4.2rem;
 }
-.swiper {
+.mySwiper_1 .swiper {
   width: 100%;
 }
-
-.swiper-slide {
+.mySwiper_1 .swiper-slide {
   text-align: center;
   font-size: 18px;
 
@@ -294,7 +293,7 @@ nav {
   background-color: var(--gold-color);
   color: white;
 }
-.swiper-slide {
+.mySwiper_1 .swiper-slide {
   position: relative;
   border-radius: 7px !important;
   border: 1px solid rgba(225, 225, 225, 0.05);
@@ -302,12 +301,12 @@ nav {
   z-index: 3;
 }
 
-.swiper-slide img {
+.mySwiper_1 .swiper-slide img {
   width: 100%;
   height: auto;
   border-radius: 7px !important;
 }
-.swiper-slide h4 {
+.mySwiper_1 .swiper-slide h4 {
   position: absolute;
   bottom: 1.5rem;
   color: white;
@@ -328,7 +327,7 @@ nav {
   transition: all 0.3s ease;
   font-size: 0.95rem;
 }
-.swiper-slide::after {
+.mySwiper_1 .swiper-slide::after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -339,13 +338,13 @@ nav {
   border-radius: 7px;
   transition: all 0.3s ease;
 }
-.swiper-slide:hover h4 {
+.mySwiper_1 .swiper-slide:hover h4 {
   transform: translateY(-1.4rem);
 }
-.swiper-slide:hover .hidden_h4 {
+.mySwiper_1 .swiper-slide:hover .hidden_h4 {
   opacity: 1;
 }
-.swiper-slide:hover::after {
+.mySwiper_1 .swiper-slide:hover::after {
   height: 40%;
 }
 
@@ -416,4 +415,25 @@ nav {
   width: 53px;
   height: 55px;
   margin-bottom: 0.5rem;
+}
+
+.section_6_black_stripe {
+  height: 500px;
+  width: 100%;
+  background-color: black;
+}
+
+/* ---------section_6--------- */
+
+.index_section_6 {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.mySwiper_2 .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: red;
 }

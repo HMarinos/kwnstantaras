@@ -13,7 +13,7 @@
   <body>
     <header>
       <div class="logo">
-        <img src="./images/konstantaras_logo.png" alt="" />
+        <img src="./images/konstantaras_logo@2x.png" alt="" />
       </div>
       <div class="header_container">
         <div class="above_nav_info">
@@ -79,7 +79,65 @@
     </header>
 
     <section class="index_section_1">
-      <div class="index_section_1_container">
+      <div class="swiper mySwiper_0">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <video
+              autoplay
+              muted
+              loop
+              src="./images/konstantaras_video.mp4"
+            ></video>
+            <div class="index_section_1_main">
+              <div>HOME PROJECT</div>
+              <h1>
+                Επαγγελματισμός, δημιουργικότητα, <br />μοντέρνος σχεδιασμός
+              </h1>
+              <p>Δημιουργούμε Project από την αρχή της εργασίας.</p>
+              <a class="main_button" href="">Δείτε το Project</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <video
+              autoplay
+              muted
+              loop
+              src="./images/konstantaras_video.mp4"
+            ></video>
+            <div class="index_section_1_main">
+              <div>SLIDE 2 ASDFASDFASDFA</div>
+              <h1>
+                Επαγγελματισμός, δημιουργικότητα, <br />μοντέρνος σχεδιασμός
+              </h1>
+              <p>Δημιουργούμε Project από την αρχή της εργασίας.</p>
+              <a class="main_button" href="">Δείτε το Project</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <video
+              autoplay
+              muted
+              loop
+              src="./images/konstantaras_video.mp4"
+            ></video>
+            <div class="index_section_1_main">
+              <div>SLIDE 3ASDFASDF ;LSKDFSA</div>
+              <h1>
+                Επαγγελματισμός, δημιουργικότητα, <br />μοντέρνος σχεδιασμός
+              </h1>
+              <p>Δημιουργούμε Project από την αρχή της εργασίας.</p>
+              <a class="main_button" href="">Δείτε το Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- <div class="index_section_1_container">
         <video
           autoplay
           muted
@@ -92,7 +150,7 @@
           <p>Δημιουργούμε Project από την αρχή της εργασίας.</p>
           <a class="main_button" href="">Δείτε το Project</a>
         </div>
-      </div>
+      </div> -->
     </section>
     <section class="index_section_2">
       <div class="index_section_2_container">
@@ -700,6 +758,14 @@
     <script src="code.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
+      var swiper = new Swiper(".mySwiper_0", {
+        direction: "vertical",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
       var swiper = new Swiper(".mySwiper_1", {
         slidesPerView: 5.4,
         spaceBetween: 30,

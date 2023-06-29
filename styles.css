@@ -33,8 +33,14 @@ header {
   background-color: black;
   display: flex;
   width: 100%;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.5);
   height: 131px;
+}
+header a:hover {
+  color: var(--gold-color);
+}
+.on_air_design a:hover {
+  color: black;
 }
 .header_container {
   width: 100%;
@@ -47,7 +53,7 @@ svg {
   justify-content: space-between;
   align-items: center;
   padding: 0.6rem 2rem;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.5);
 }
 .above_nav_social_contact {
   display: flex;
@@ -91,7 +97,10 @@ nav {
   align-items: center;
 }
 .logo {
-  border-right: 1px solid white;
+  border-right: 1px solid rgba(200, 200, 200, 0.5);
+}
+.logo img {
+  height: 100%;
 }
 
 .on_air_design a {
@@ -121,6 +130,7 @@ nav {
   font-family: "manrope";
   position: relative;
   color: white;
+  background-color: black;
   height: calc(100dvh - 133px);
 }
 .index_section_1_main {
@@ -154,6 +164,21 @@ nav {
 .index_section_1_main :is(div, h1, p, a) {
   margin-left: 9rem;
 }
+
+.mySwiper_0 .swiper-pagination-bullets {
+  left: 6rem;
+  top: 39% !important;
+}
+.mySwiper_0 .swiper-pagination-bullet {
+  margin-bottom: 1.5rem !important;
+  color: white;
+  background-color: white;
+}
+.mySwiper_0 .swiper-pagination-bullet-active {
+  color: var(--gold-color) !important;
+}
+
+/* -----------section_1------------- */
 .index_section_2 {
   margin-bottom: 4.6rem;
 }
@@ -878,6 +903,10 @@ footer {
   font-weight: bold;
   cursor: pointer;
 }
+.newsletter_column button:hover {
+  background-color: var(--gold-color);
+  border: var(--gold-color);
+}
 
 .messenger {
   position: absolute;
@@ -901,4 +930,9 @@ footer li {
 .social_column svg {
   width: 21px;
   height: 21px;
+}
+
+.mySwiper_0 {
+  width: 100%;
+  height: 100%;
 }

@@ -27,6 +27,14 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+.initial_header {
+  background-color: black;
+}
+.header_transform {
+  background-color: red;
+}
+
 header {
   font-family: "manrope";
   color: white;
@@ -35,6 +43,9 @@ header {
   width: 100%;
   border-bottom: 1px solid rgba(200, 200, 200, 0.5);
   height: 131px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 header a:hover {
   color: var(--gold-color);
@@ -161,24 +172,55 @@ nav {
   font-weight: 400;
   margin-bottom: 1.5rem;
 }
+
 .index_section_1_main :is(div, h1, p, a) {
   margin-left: 9rem;
 }
 
 .mySwiper_0 .swiper-pagination-bullets {
   left: 6rem;
-  top: 39% !important;
+  top: 37.5% !important;
 }
 .mySwiper_0 .swiper-pagination-bullet {
   margin-bottom: 1.5rem !important;
-  color: white;
-  background-color: white;
+  color: white !important;
+  opacity: 1;
+  background-color: white !important;
 }
 .mySwiper_0 .swiper-pagination-bullet-active {
   color: var(--gold-color) !important;
 }
 
 /* -----------section_1------------- */
+
+.index_section_1_main a {
+  border: 1px solid white;
+}
+.index_section_1 a:hover {
+  background-color: var(--gold-color);
+  border-color: var(--gold-color);
+}
+
+.mySwiper_0 .swiper-pagination-bullet {
+  width: 0.7rem !important;
+  height: 0.7rem !important;
+}
+.mySwiper_0 .swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: var(--gold-color) !important;
+  position: relative !important;
+}
+
+.mySwiper_0 .swiper-pagination-bullet-active::after {
+  position: absolute;
+  content: "";
+  top: -7px;
+  left: -7px;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--gold-color);
+}
 .index_section_2 {
   margin-bottom: 4.6rem;
 }
@@ -592,6 +634,15 @@ nav {
 
 /* ------------section7--------------- */
 
+.index_section_7 svg {
+  fill: black;
+}
+.index_section_7 a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .index_section_7 {
   margin-top: 22rem;
   font-family: "manrope";
@@ -935,4 +986,137 @@ footer li {
 .mySwiper_0 {
   width: 100%;
   height: 100%;
+}
+.newsletter_column button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* -------products_section_1---------- */
+
+.products_section_1 {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  height: 380px;
+  font-family: "manrope";
+  position: absolute;
+  width: 100%;
+}
+
+.products_section_1_container {
+  max-width: 1641px;
+  width: 100%;
+  padding-left: 0.5rem;
+}
+.products_section_1_navigation {
+  margin-top: 2.6rem;
+}
+.products_section_1_navigation ul {
+  display: flex;
+  gap: 0.3rem;
+  font-size: 0.94rem;
+}
+.products_section_1_navigation ul li:nth-child(2) {
+  color: var(--gold-color);
+}
+.products_section_1 h1 {
+  color: var(--gold-color);
+  font-size: 1.875rem;
+  letter-spacing: -1.24px;
+  margin-bottom: 2rem;
+}
+.products_section_1 p {
+  font-size: 1.05rem;
+  letter-spacing: -0.68px;
+}
+
+.products_section_2 {
+  font-family: "manrope";
+  display: flex;
+  justify-content: center;
+  margin-top: 16rem;
+  margin-bottom: 12rem;
+}
+
+.products_section_2_container {
+  max-width: 1640px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+  column-gap: 1rem;
+}
+
+.products_section_2_box {
+  position: relative;
+  width: 537px;
+  height: 355px;
+  cursor: pointer;
+}
+
+.products_section_2_container img {
+  width: 100%;
+  height: 100%;
+}
+
+.products_section_2_box .box_title {
+  position: absolute;
+  color: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 3.8rem;
+  padding-bottom: 2.8rem;
+  border-radius: 0 0 7px 7px;
+  width: 100%;
+}
+.products_section_2_box .box_title h2 {
+  font-size: 1.375rem;
+  letter-spacing: -0.44px;
+  font-weight: 400;
+  z-index: 10;
+}
+
+.products_section_2_box .box_title::after {
+  content: "";
+  position: absolute;
+  background: transparent linear-gradient(180deg, #00000000 0%, #000000 90%) 0%
+    0% no-repeat padding-box;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 7px 7px;
+  transition: all 0.3s ease;
+}
+.products_section_2_container .box_title h3 {
+  position: absolute;
+  z-index: 10;
+  color: white;
+  font-size: 0.875rem;
+  bottom: 3rem;
+  transition: all 0.3s ease;
+  opacity: 0;
+  font-weight: 400;
+}
+
+.products_section_2_box:hover .box_title h3 {
+  bottom: 1.2rem;
+  opacity: 1;
+}
+
+.products_section_2_box:hover .box_title::after {
+  padding-top: 5rem;
+}
+
+.products_footer .products_section_1_navigation {
+  position: absolute;
+  top: 0;
 }

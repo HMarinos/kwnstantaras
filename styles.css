@@ -12,6 +12,7 @@ a {
 :root {
   --gold-color: #beb499;
 }
+
 @font-face {
   font-family: "manrope";
   src: url(./fonts/Manrope-Regular.woff);
@@ -28,13 +29,6 @@ a {
   align-items: center;
 }
 
-.initial_header {
-  background-color: black;
-}
-.header_transform {
-  background-color: red;
-}
-
 header {
   font-family: "manrope";
   color: white;
@@ -43,7 +37,7 @@ header {
   width: 100%;
   border-bottom: 1px solid rgba(200, 200, 200, 0.5);
   height: 131px;
-  position: sticky;
+
   top: 0;
   z-index: 999;
 }
@@ -1314,4 +1308,65 @@ footer li {
   margin-bottom: 2rem;
   font-size: 1.875rem;
   font-weight: bold;
+}
+
+/* ------------scroll-header---------- */
+.scroll_header_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 2000;
+}
+.scroll_header {
+  background: #00000080 0% 0% no-repeat padding-box;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  color: white;
+  position: sticky;
+  top: 0;
+  opacity: 0;
+  display: none;
+  z-index: 9999;
+}
+.scroll_header,
+.scroll_header ul {
+  font-family: "manrope";
+  align-items: center;
+}
+.scroll_header ul {
+  display: flex;
+  gap: 3rem;
+}
+.scroll_header .scroll_end {
+  display: flex;
+}
+
+.scroll_header .scroll_logo img {
+  height: 65px;
+}
+
+.nav_ul {
+  margin-left: 3rem;
+}
+.scroll_end button {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  color: black;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 1.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll_header_active {
+  opacity: 1;
+  display: block;
 }

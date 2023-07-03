@@ -147,7 +147,7 @@ nav {
   height: calc(100dvh - 133px);
   padding-top: 133px;
 }
-.index_section_1_main {
+.index_section_1_main_container {
   background: transparent linear-gradient(0deg, #0000009e 0%, #000000 100%) 0%
     0% no-repeat padding-box;
   width: 100%;
@@ -159,16 +159,16 @@ nav {
   flex-direction: column;
   justify-content: center;
 }
-.index_section_1_main div {
+.index_section_1_main_container div {
   color: var(--gold-color);
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 9.6px;
 }
-.index_section_1_main p {
+.index_section_1_main_container p {
   margin-bottom: 4.3rem;
 }
-.index_section_1_main h1 {
+.index_section_1_main_container h1 {
   letter-spacing: -2px;
   font-size: 3.125rem;
   line-height: 60px;
@@ -176,14 +176,10 @@ nav {
   margin-bottom: 1.5rem;
 }
 
-.index_section_1_main :is(div, h1, p, a) {
+.index_section_1_main_container :is(div, h1, p, a) {
   margin-left: 9rem;
 }
 
-.mySwiper_0 .swiper-pagination-bullets {
-  left: 6rem;
-  top: 22.5rem !important;
-}
 .mySwiper_0 .swiper-pagination-bullet {
   margin-bottom: 1.5rem !important;
   color: white !important;
@@ -196,7 +192,7 @@ nav {
 
 /* -----------section_1------------- */
 
-.index_section_1_main a {
+.index_section_1_main_container a {
   border: 1px solid white;
 }
 .index_section_1 a:hover {

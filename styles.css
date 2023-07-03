@@ -30,6 +30,8 @@ a {
 }
 
 header {
+  position: fixed;
+  top: 0;
   font-family: "manrope";
   color: white;
   background-color: black;
@@ -37,14 +39,14 @@ header {
   width: 100%;
   border-bottom: 1px solid rgba(200, 200, 200, 0.5);
   height: 131px;
-
   top: 0;
   z-index: 999;
+  transition: all 0.3s ease;
 }
 header a:hover {
   color: var(--gold-color);
 }
-.on_air_design a:hover {
+.on_air_design_button:hover {
   color: black;
 }
 .header_container {
@@ -73,8 +75,10 @@ svg {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 2rem;
+  padding: 0 2rem;
   align-items: center;
+  height: 100%;
+  max-height: 89px;
 }
 .navigation ul {
   display: flex;
@@ -107,8 +111,10 @@ nav {
 .logo img {
   height: 100%;
 }
-
-.on_air_design a {
+.on_air_design {
+  display: flex;
+}
+.on_air_design_button {
   background-color: white;
   color: black;
   border-radius: 50px;
@@ -129,6 +135,7 @@ nav {
 }
 .index_section_1_container {
   height: calc(100dvh - 133px);
+
   overflow: hidden;
 }
 .index_section_1 {
@@ -137,6 +144,7 @@ nav {
   color: white;
   background-color: black;
   height: calc(100dvh - 133px);
+  padding-top: 133px;
 }
 .index_section_1_main {
   background: transparent linear-gradient(0deg, #0000009e 0%, #000000 100%) 0%
@@ -173,7 +181,7 @@ nav {
 
 .mySwiper_0 .swiper-pagination-bullets {
   left: 6rem;
-  top: 37.5% !important;
+  top: 22.5rem !important;
 }
 .mySwiper_0 .swiper-pagination-bullet {
   margin-bottom: 1.5rem !important;
@@ -846,7 +854,12 @@ footer {
   position: relative;
   z-index: 0;
 }
-
+footer li a {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 .footer_container {
   display: flex;
   flex-direction: column;
@@ -990,6 +1003,9 @@ footer li {
 
 /* -------products_section_1---------- */
 
+.products_section_1_2 {
+  position: relative;
+}
 .products_section_1 {
   display: flex;
   justify-content: center;
@@ -997,7 +1013,7 @@ footer li {
   color: white;
   height: 380px;
   font-family: "manrope";
-  position: absolute;
+  padding-top: 10rem;
   width: 100%;
 }
 
@@ -1032,8 +1048,10 @@ footer li {
   font-family: "manrope";
   display: flex;
   justify-content: center;
-  margin-top: 16rem;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 12rem;
+  margin-top: -8rem;
 }
 
 .products_section_2_container {
@@ -1128,6 +1146,8 @@ footer li {
   background: #000000 0% 0% no-repeat padding-box;
   color: white;
   position: relative;
+  padding-top: 131px;
+  overflow-x: hidden;
 }
 
 .blury_o_1,
@@ -1296,12 +1316,6 @@ footer li {
   color: var(--gold-color);
 }
 
-.products_section_2 {
-  flex-direction: column;
-  align-items: center;
-  margin-top: -10rem;
-}
-
 .products_section_2_header {
   color: var(--gold-color);
   z-index: 10;
@@ -1310,63 +1324,39 @@ footer li {
   font-weight: bold;
 }
 
-/* ------------scroll-header---------- */
-.scroll_header_container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  z-index: 2000;
-}
-.scroll_header {
-  background: #00000080 0% 0% no-repeat padding-box;
+.header {
+  height: 80px;
+  background: #00000085 0% 0% no-repeat padding-box;
+
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
-  color: white;
-  position: sticky;
-  top: 0;
-  opacity: 0;
+}
+.header .above_nav_info {
   display: none;
-  z-index: 9999;
-}
-.scroll_header,
-.scroll_header ul {
-  font-family: "manrope";
-  align-items: center;
-}
-.scroll_header ul {
-  display: flex;
-  gap: 3rem;
-}
-.scroll_header .scroll_end {
-  display: flex;
 }
 
-.scroll_header .scroll_logo img {
-  height: 65px;
+.header nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.header .header_container {
+  padding: 0 2rem;
 }
 
-.nav_ul {
-  margin-left: 3rem;
+.header .on_air_design {
+  gap: 2rem;
 }
-.scroll_end button {
-  margin-left: 3rem;
-  margin-right: 3rem;
-  color: black;
-  background-color: white;
-  border: none;
-  font-weight: bold;
-  font-size: 1.125rem;
-  display: flex;
-  justify-content: center;
+.hidden {
+  display: none;
+  opacity: 0;
+}
+.header .above_nav_mininav {
   align-items: center;
-}
-.button_container {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
-.scroll_header_active {
+.header .hidden {
   opacity: 1;
-  display: block;
 }

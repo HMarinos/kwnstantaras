@@ -4,6 +4,9 @@
   scroll-behavior: smooth;
   font-family: "manrope";
 }
+body {
+  overflow-x: hidden;
+}
 lottie-player {
   transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
   mix-blend-mode: luminosity;
@@ -1514,6 +1517,55 @@ footer li {
   opacity: 1;
 }
 
+.burger_menu {
+  height: calc(100dvh - 160px);
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  padding-left: 3rem;
+  padding-top: calc(80px + 5rem);
+  z-index: 500;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.3s ease;
+}
+.burger_menu .above_nav_social_contact {
+  padding-bottom: 5rem;
+}
+.burger_active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.burger_menu_main {
+  margin-top: 5rem;
+}
+.burger_menu_header ul li,
+.burger_menu_main ul li {
+  margin-bottom: 1rem;
+}
+.open_burger {
+  display: none;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+.on_air_design .toggle_burger {
+  transform: rotate(45deg) scale(1.2) !important;
+}
+
+.hide_overflow {
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 1700px) {
   .index_section_8_grid {
     grid-template-columns: 1fr 1fr 1fr;
@@ -1601,7 +1653,7 @@ footer li {
     margin-right: 2rem;
   }
 }
-@media only screen and (max-width: 1460px) {
+@media only screen and (max-width: 1500px) {
   .index_section_5_main {
     flex-direction: column-reverse;
     align-items: center;
@@ -1612,6 +1664,8 @@ footer li {
     margin-top: 3rem;
     padding: 0;
   }
+}
+@media only screen and (max-width: 1460px) {
   .shop_box_main img {
     transform: scale(1);
   }
@@ -1676,9 +1730,16 @@ footer li {
   .single_product_section_1_container {
     flex-direction: column;
   }
+  .navigation ul,
+  .above_nav_mininav ul {
+    gap: 1.5rem;
+  }
+  .section_7_grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1140px) {
   .mySwiper_1 {
     max-width: 900px;
   }
@@ -1691,7 +1752,14 @@ footer li {
     max-height: 100%;
     justify-content: flex-end;
   }
-  .section_7_grid {
-    grid-template-columns: repeat(2, 1fr);
+
+  .on_air_design .open_burger {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transform: scale(1);
+  }
+  header {
+    height: 80px;
   }
 }

@@ -11,3 +11,9 @@ function scrollFunction() {
     document.getElementById("dropdown").classList.remove("dropdown_after");
   }
 }
+
+function toggle_burger() {
+  document.querySelector(".open_burger").classList.toggle("toggle_burger");
+  document.querySelector(".burger_menu").classList.toggle("burger_active");
+  document.body.classList.toggle("hide_overflow");
+}

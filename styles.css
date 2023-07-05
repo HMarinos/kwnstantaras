@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  font-family: "manrope";
 }
 lottie-player {
   transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
@@ -40,49 +41,51 @@ video {
   width: 35px;
   height: 35px;
 }
+
 .navigation_dropdown {
-  border-top: 1px solid rgba(200, 200, 200, 0.5);
-  position: absolute;
-  bottom: -386px;
-  overflow: hidden;
-  padding-top: 4rem;
+  position: fixed;
+  top: 132px;
   left: 0;
-  display: flex;
-  justify-content: center;
+  z-index: 900;
   width: 100%;
-  padding-bottom: 4rem;
-  background: #0000005c 0% 0% no-repeat padding-box !important;
+  left: -100%;
+  transition: all 0.3s ease-in-out;
   opacity: 0;
-  backdrop-filter: blur(30px) !important;
-  -webkit-backdrop-filter: blur(30px) !important;
-  z-index: 0;
-  transition: all 0.4s ease-in-out;
-  transform: translateX(-100%);
+  opacity: 1;
+  background-color: red;
+}
+.dropdown_after {
+  top: 80px;
+}
+.proionta:hover .navigation_dropdown {
+  left: 0;
 }
 
-.proionta:hover .navigation_dropdown {
-  opacity: 1;
-  transform: translateX(0);
-}
-.navigation_dropdown li:hover {
-  color: white !important;
-  border-bottom: none !important;
-}
-.navigation_dropdown li a:hover {
-  color: var(--gold-color);
-}
 .navigation_dropdown_container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  max-width: 1455px;
+  max-width: 1326px;
   width: 100%;
+  inset: 0;
+  margin: auto;
+  padding: 4rem 4rem 3rem 4rem;
+  color: white;
 }
+
+.navigation_dropdown li a:hover {
+  color: var(--gold-color);
+}
+
 .navigation_dropdown_container ul {
+  display: flex;
   flex-direction: column;
-  gap: 1.5rem !important;
   align-items: start !important;
-  height: auto !important;
+  gap: 1rem !important;
 }
+.navigation_dropdown_container :is(li, li a) {
+  border-bottom: none !important;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -96,9 +99,6 @@ header {
   top: 0;
   z-index: 999;
   transition: all 0.3s ease;
-}
-.navigation_dropdown {
-  color: white;
 }
 
 .on_air_design_button:hover {
@@ -164,7 +164,7 @@ header li:hover {
 }
 .navigation li:hover,
 .header .above_nav_mininav li:hover {
-  border-bottom: 1.5px solid var(--gold-color);
+  border-bottom: 1px solid var(--gold-color);
 }
 
 nav {
@@ -1570,7 +1570,7 @@ footer li {
     right: 2.7rem;
   }
   .mySwiper_1 {
-    max-width: 1178px;
+    max-width: 1190px;
   }
   .products_section_2_container {
     row-gap: 1.5rem;
@@ -1620,6 +1620,12 @@ footer li {
   }
   .index_section_2_main a {
     margin-top: 3rem;
+  }
+  .index_section_7 {
+    margin-top: 15rem;
+  }
+  .index_section_8 {
+    margin-top: 23rem;
   }
 }
 @media only screen and (max-width: 1330px) {

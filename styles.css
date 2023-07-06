@@ -67,8 +67,11 @@ a {
 .dropdown_after {
   top: 80px;
 }
-.proionta:hover .navigation_dropdown {
+.remove_hover:hover .navigation_dropdown {
   left: 0;
+}
+.toggle_mobile_dropdown {
+  left: 0 !important;
 }
 
 .navigation_dropdown_container {

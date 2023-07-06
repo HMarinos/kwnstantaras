@@ -22,6 +22,17 @@ window.onresize = function () {
   if (screen.width > 1140) {
     document.querySelector(".burger_menu").classList.remove("burger_active");
     document.querySelector(".open_burger").classList.remove("toggle_burger");
-    console.log("working");
+  }
+};
+
+function mobile_dropdown() {
+  document
+    .querySelector(".navigation_dropdown")
+    .classList.toggle("toggle_mobile_dropdown");
+}
+
+window.onresize = function () {
+  if (screen.width > 912) {
+    document.querySelector(".proionta").classList.remove("remove_hover");
   }
 };

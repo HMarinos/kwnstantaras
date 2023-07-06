@@ -67,7 +67,7 @@ a {
 .dropdown_after {
   top: 80px;
 }
-.remove_hover:hover .navigation_dropdown {
+.proionta:hover .navigation_dropdown {
   left: 0;
 }
 .toggle_mobile_dropdown {
@@ -1540,10 +1540,9 @@ footer li {
   width: 100%;
   overflow: hidden;
   top: 0;
-  padding-left: 3rem;
+  padding-left: 5rem;
   padding-top: calc(80px + 5rem);
   z-index: 500;
-  background-color: black;
   color: white;
   display: flex;
   flex-direction: column;
@@ -1552,6 +1551,10 @@ footer li {
   opacity: 0;
   transform: translateX(100%);
   transition: all 0.3s ease;
+  background: #0000005c 0% 0% no-repeat padding-box;
+  opacity: 1;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(30px);
 }
 .burger_menu .above_nav_social_contact {
   padding-bottom: 5rem;
@@ -1583,6 +1586,14 @@ footer li {
   overflow: hidden;
 }
 
+.burger_menu_main .on_air_design_button {
+  width: 170px;
+  height: 30px;
+  margin-top: 5rem;
+}
+.burger_menu_wrapper {
+  font-size: 130%;
+}
 @media only screen and (max-width: 1700px) {
   .index_section_8_grid {
     grid-template-columns: 1fr 1fr 1fr;

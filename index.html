@@ -34,6 +34,22 @@
             <li>Προιόντα</li>
             <li>Projects</li>
             <li>Blog</li>
+            <li>
+              <a class="on_air_design_button" href=""
+                ><lottie-player
+                  src="./images/measure.json"
+                  background="transparent"
+                  speed="1"
+                  style="
+                    width: 55.15433120727539px;
+                    height: 55.15433120727539px;
+                  "
+                  loop
+                  autoplay
+                ></lottie-player
+                >On Air Design</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -137,7 +153,7 @@
             <ul>
               <li><a href="">Αρχική</a></li>
               <li><a href="">Ποιοι Είμαστε</a></li>
-              <li onclick="mobile_dropdown()" class="proionta remove_hover">
+              <li class="proionta">
                 Προιόντα
                 <div class="navigation_dropdown" id="dropdown">
                   <div class="navigation_dropdown_container">
@@ -1045,7 +1061,12 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper_0", {
-        direction: "vertical",
+        direction: "horizontal",
+        breakpoints: {
+          1000: {
+            direction: "vertical",
+          },
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,

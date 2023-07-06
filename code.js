@@ -30,9 +30,3 @@ function mobile_dropdown() {
     .querySelector(".navigation_dropdown")
     .classList.toggle("toggle_mobile_dropdown");
 }
-
-window.onresize = function () {
-  if (screen.width > 912) {
-    document.querySelector(".proionta").classList.remove("remove_hover");
-  }
-};

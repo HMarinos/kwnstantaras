@@ -347,10 +347,10 @@ nav {
   flex-direction: column;
   justify-content: center;
 }
-.section_2_img img {
+/* .section_2_img img {
   width: 100%;
   height: auto;
-}
+} */
 .section_2_img {
   position: relative;
 }
@@ -1946,9 +1946,6 @@ footer li {
   }
   .index_section_5_main {
     align-items: center;
-  }
-  .section_2_img img {
-    width: unset !important;
   }
 }
 

@@ -518,7 +518,10 @@
                 </div>
                 <div class="address_phone">
                   <div class="address">
-                    <span>Διεύθυνση: </span> Βιο.Πα.Κερατέας
+                    <span>Διεύθυνση: </span
+                    ><a href="https://goo.gl/maps/6XBsHwKUmnH9pBCY7">
+                      Βιο.Πα.Κερατέας</a
+                    >
                   </div>
                   <div class="phone">
                     <span>Τηλέφωνο: </span>
@@ -832,7 +835,11 @@
           <div class="footer_column">
             <div class="column_title">Επικοινωνία</div>
             <div class="central_facilities">Κεντρικές Εγκαταστάσεις</div>
-            <p class="central_location">Βια.Πα.Κερατέας</p>
+            <p class="central_location">
+              <a href="https://goo.gl/maps/DhMW3dxEdBehJnU99"
+                >Βια.Πα.Κερατέας</a
+              >
+            </p>
             <ul>
               <li>
                 <a href="tel:+302109718509">
@@ -1055,9 +1062,10 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-        slidesPerView: 2,
+        slidesPerView: 1,
 
         breakpoints: {
+          960: { slidesPerView: 2 },
           1460: { slidesPerView: 3 },
         },
         spaceBetween: 30,

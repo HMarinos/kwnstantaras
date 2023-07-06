@@ -17,3 +17,11 @@ function toggle_burger() {
   document.querySelector(".burger_menu").classList.toggle("burger_active");
   document.body.classList.toggle("hide_overflow");
 }
+
+window.onresize = function () {
+  if (screen.width > 1140) {
+    document.querySelector(".burger_menu").classList.remove("burger_active");
+    document.querySelector(".open_burger").classList.remove("toggle_burger");
+    console.log("working");
+  }
+};

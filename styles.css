@@ -12,6 +12,11 @@ lottie-player {
   mix-blend-mode: luminosity;
   opacity: 1;
 }
+video {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
 ul {
   list-style-type: none;
 }
@@ -347,10 +352,10 @@ nav {
   flex-direction: column;
   justify-content: center;
 }
-/* .section_2_img img {
+.section_2_img img {
   width: 100%;
   height: auto;
-} */
+}
 .section_2_img {
   position: relative;
 }
@@ -1946,6 +1951,9 @@ footer li {
   }
   .index_section_5_main {
     align-items: center;
+  }
+  .section_2_img img {
+    width: unset !important;
   }
 }
 

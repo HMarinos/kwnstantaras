@@ -19,14 +19,18 @@ function toggle_burger() {
 }
 
 window.onresize = function () {
+  console.log(screen.width);
   if (screen.width > 1140) {
     document.querySelector(".burger_menu").classList.remove("burger_active");
     document.querySelector(".open_burger").classList.remove("toggle_burger");
   }
+  // if (screen.width == 1000) {
+  //   Swiper.changeDirection();
+  // }
 };
 
-function mobile_dropdown() {
-  document
-    .querySelector(".navigation_dropdown")
-    .classList.toggle("toggle_mobile_dropdown");
-}
+// function mobile_dropdown() {
+//   document
+//     .querySelector(".navigation_dropdown")
+//     .classList.toggle("toggle_mobile_dropdown");
+// }

@@ -24,9 +24,9 @@ window.onresize = function () {
     document.querySelector(".burger_menu").classList.remove("burger_active");
     document.querySelector(".open_burger").classList.remove("toggle_burger");
   }
-  // if (screen.width == 1000) {
-  //   Swiper.changeDirection();
-  // }
+  if (screen.width == 949) {
+    document.querySelector(".trigger_button").click();
+  }
 };
 
 // function mobile_dropdown() {

@@ -552,12 +552,21 @@
     <script>
       var swiper = new Swiper(".mySwiper_4", {
         spaceBetween: 10,
-        slidesPerView: 4,
+        slidesPerView: 2,
+        breakpoints: {
+          420: {
+            slidesPerView: 3,
+          },
+          535: {
+            slidesPerView: 4,
+          },
+        },
 
         watchSlidesProgress: true,
       });
       var swiper = new Swiper(".mySwiper_3", {
         spaceBetween: 10,
+        autoHeight: true,
         navigation: {
           nextEl: ".swiper-button-next-product",
           prevEl: ".swiper-button-prev-product",

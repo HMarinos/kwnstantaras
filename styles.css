@@ -66,10 +66,11 @@ a {
 .dropdown_after {
   top: 80px;
 }
-.proionta:hover .navigation_dropdown {
+
+.proionta_hover:hover .navigation_dropdown {
   left: 0;
 }
-.toggle_mobile_dropdown {
+.dropdown_active .navigation_dropdown {
   left: 0 !important;
 }
 
@@ -152,7 +153,7 @@ svg {
   border-bottom: 1px solid transparent;
   cursor: pointer;
 }
-.navigation li:hover svg {
+.navigation li:hover .dropdown_angle {
   transform: rotate(90deg);
   fill: var(--gold-color);
 }

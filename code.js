@@ -28,3 +28,17 @@ window.onresize = function () {
     document.querySelector(".trigger_button").click();
   }
 };
+function isTouchDevice() {
+  return (
+    "ontouchstart" in window ||
+    navigator.maxTouchPoints > 0 ||
+    navigator.msMaxTouchPoints > 0
+  );
+}
+
+function toggle_dropdown() {
+  if (isTouchDevice()) {
+    document.querySelector(".proionta").classList.remove("proionta_hover");
+    document.querySelector(".proionta").classList.toggle("dropdown_active");
+  }
+}

@@ -56,10 +56,9 @@ a {
   width: 100%;
   left: -100%;
   transition: all 0.3s ease-in-out;
-  opacity: 0;
-  opacity: 1;
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.98);
 }
+
 .navigation_dropdown_container ul,
 .navigation_dropdown_container li {
   height: unset !important;
@@ -147,6 +146,11 @@ svg {
   align-items: center;
   display: flex;
   border-bottom: 1px solid transparent;
+}
+
+.navigation li {
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
 }
 .navigation li:hover svg {
   transform: rotate(90deg);
@@ -985,7 +989,34 @@ footer {
   position: relative;
   z-index: 0;
 }
+.mess-top {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 1.2rem;
+}
+.arrow-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.back_to_top_arrow {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
+  transition: all 0.3s ease;
+}
 .back_to_top {
+  transform: rotate(-90deg);
+  margin-bottom: 7rem;
+  font-size: 1.5rem;
+  width: 160px;
+  transition: all 0.3s ease;
+}
+/* .back_to_top {
   position: absolute;
   right: 2.5rem;
   bottom: 5.5rem;
@@ -994,18 +1025,18 @@ footer {
   font-size: 2.06rem;
   font-weight: 100;
   transition: all 0.3s ease;
-}
+} */
 
 .go_top:hover .back_to_top {
   letter-spacing: 3.3px;
 }
 
-.messenger {
+/* .messenger {
   position: absolute;
   right: 2.625rem;
   bottom: 1.5rem;
   cursor: pointer;
-}
+} */
 
 .messenger svg {
   width: 39px;
@@ -1014,13 +1045,13 @@ footer {
 .messenger svg:hover {
   fill: #00b2ff;
 }
-.back_to_top_arrow {
+/* .back_to_top_arrow {
   position: absolute;
   right: 2.5rem;
   bottom: 18rem;
   right: 5px;
   transition: all 0.3s ease;
-}
+} */
 
 .go_top:hover .back_to_top_arrow {
   transform: translateY(-20px);

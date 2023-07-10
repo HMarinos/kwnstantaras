@@ -1323,11 +1323,6 @@ footer li {
   padding-top: 5rem;
 }
 
-.products_footer .products_section_1_navigation {
-  position: absolute;
-  top: 0;
-}
-
 /* 
 -------------single_product-------------- */
 .single_product {
@@ -1522,7 +1517,12 @@ footer li {
   font-size: 1.875rem;
   font-weight: bold;
 }
-
+.products_html .footer_container {
+  padding-top: 0;
+}
+.products_html .products_section_1_navigation {
+  margin-bottom: 8rem;
+}
 .header {
   height: 80px;
   background: #00000085 0% 0% no-repeat padding-box;

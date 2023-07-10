@@ -1496,6 +1496,18 @@ footer li {
   border-radius: 50px;
 }
 
+.facebook_icon:hover svg {
+  fill: #4267b2;
+}
+.facebook_icon:hover {
+  color: #4267b2;
+}
+.twitter_icon:hover {
+  color: #1da1f2;
+}
+.twitter_icon:hover svg {
+  fill: #1da1f2;
+}
 .single_product .interested_link a:hover {
   background: transparent linear-gradient(180deg, #beb499 0%, #a7a5a2 100%) 0%
     0% no-repeat padding-box;

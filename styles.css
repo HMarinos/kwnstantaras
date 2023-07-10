@@ -426,6 +426,8 @@ nav {
   font-family: "manrope";
   background: transparent linear-gradient(0deg, #000000 0%, #000000 100%) 0% 0%
     no-repeat padding-box;
+  position: relative;
+  padding: 0 1rem;
 }
 .index_section_4_pattern {
   position: absolute;
@@ -638,7 +640,7 @@ nav {
   flex-direction: column;
   align-items: center;
   width: 532px;
-  height: 372px;
+  max-height: 372px;
   position: relative;
   border-radius: 7px;
 }
@@ -757,7 +759,7 @@ nav {
 
 .mySwiper_2 .swiper-slide img {
   width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: 7px;
 }
 
@@ -1107,13 +1109,11 @@ footer li a {
   display: flex;
   flex-direction: column;
 }
-.newsletter_column input::placeholder {
-  padding-left: 1.8rem;
-}
+
 .newsletter_column input {
   max-width: 360px;
-  width: 100%;
-  padding: 0.5rem;
+  width: calc(100% - 2rem);
+  padding: 0.5rem 0 0.5rem 2rem;
   background-color: black;
   color: rgba(200, 200, 200, 0.5);
   border: none;
@@ -1154,7 +1154,7 @@ footer li {
 .input_icon svg {
   position: absolute;
   left: 3px;
-  top: 8px;
+  top: 10px;
 }
 .social_column svg {
   width: 21px;
@@ -1539,7 +1539,7 @@ footer li {
 }
 
 .burger_menu {
-  height: calc(100dvh - 155px);
+  height: 100dvh;
   position: fixed;
   width: 100%;
   overflow: hidden;
@@ -1637,6 +1637,7 @@ footer li {
   }
   .section_6_box_title {
     padding-left: 1.5rem;
+    padding-right: 1rem;
   }
 }
 
@@ -1878,9 +1879,6 @@ footer li {
   .products_section_2_container {
     grid-template-columns: 1fr 1fr;
   }
-  .footer_container {
-    padding-top: 8rem;
-  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -1949,15 +1947,20 @@ footer li {
     transform: scale(1);
     margin-bottom: 2rem;
   }
+
   .index_section_5_grid .shop_box {
     box-shadow: 0px 3px 15px #00000029;
-  }
-  .index_section_5_grid .shop_box {
-    width: 410px;
-    height: 265px;
+    max-width: 410px;
+    width: 93%;
+    height: auto;
+    padding: 0.7rem 1rem;
   }
   .index_section_1_main_container h1 {
     font-size: 2.5rem;
+  }
+  .index_section_5_grid .shop_box_container {
+    max-width: 377px;
+    width: 100%;
   }
 }
 
@@ -2035,6 +2038,7 @@ footer li {
     display: flex;
     justify-content: center;
   }
+
   .footer_grid_top {
     grid-template-columns: 1fr;
   }
@@ -2089,8 +2093,8 @@ footer li {
   .swiper_cont {
     margin-left: 3rem;
   }
-  .footer_container {
-    padding-top: 4rem;
+  .main_button {
+    height: 45px;
   }
 }
 
@@ -2111,6 +2115,9 @@ footer li {
   .products_section_2_header {
     font-size: 1.3rem;
   }
+  .index_section_7 {
+    margin-top: 15rem;
+  }
 }
 
 @media only screen and (max-width: 420px) {
@@ -2122,5 +2129,125 @@ footer li {
   }
   html {
     font-size: 70%;
+  }
+  .products_section_1 {
+    height: 300px;
+  }
+  .index_section_6 {
+    padding: 0 1rem;
+  }
+  .section_6_black_stripe {
+    height: 390px;
+  }
+  .index_section_5_grid .shop_box_container {
+    height: 188px;
+  }
+  .index_section_5_grid .shop_box p {
+    line-height: 18px;
+  }
+  .index_section_5_main {
+    padding: 0 1rem;
+  }
+
+  .section_7_grid_box {
+    max-width: 300px;
+    width: 100%;
+    height: 385px;
+  }
+  .section_7_grid_box_container {
+    max-width: 280px;
+    width: 100%;
+  }
+  .section_7_grid_box a {
+    max-width: 280px;
+  }
+  .section_7_grid_box_container img {
+    width: 100%;
+  }
+  .index_section_1 .swiper-horizontal .swiper-pagination {
+    margin-left: 18rem;
+  }
+  .mySwiper_0 .swiper-pagination-bullet-active::after {
+    top: -6px;
+    left: -6px;
+  }
+  .index_section_1_main_container div {
+    letter-spacing: 8.5px;
+  }
+  .index_section_1_main_container p {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  html {
+    font-size: 75%;
+  }
+  .index_section_5_intro h5 {
+    line-height: 25px;
+  }
+  .index_section_1_main_container :is(h1, p, a) {
+    margin-left: 1.5rem;
+  }
+  .swiper_cont {
+    margin-left: 1.5rem;
+  }
+  .index_section_8 a {
+    width: 250px;
+  }
+  .index_section_8_grid {
+    max-width: calc(100% - 1rem);
+  }
+}
+@media only screen and (max-width: 282px) {
+  html {
+    font-size: 65%;
+  }
+  .index_section_8_grid {
+    max-width: calc(100% - 1.5rem);
+  }
+  .section_7_grid_box {
+    max-width: 255px;
+  }
+  .section_7_grid_box_container {
+    max-width: 235px;
+  }
+  .section_7_grid_box a {
+    max-width: 235px;
+  }
+  .section_7_grid_box {
+    height: 350px;
+  }
+  .mySwiper_2 .section_6_box_main ::after {
+    background: transparent linear-gradient(182deg, #00000000 50%, #000000 100%)
+      0% 0% no-repeat padding-box;
+  }
+  .index_section_7 {
+    margin-top: 10rem;
+  }
+  .index_section_5_intro h5 {
+    line-height: 20px;
+    margin-top: 0.5rem;
+  }
+  .index_section_4_intro h3 {
+    line-height: 30px;
+    margin-top: 0.5rem;
+  }
+  .index_section_1_main_container h1 {
+    line-height: 40px;
+  }
+  .mySwiper_0 .swiper-pagination-bullet-active::after {
+    width: 1.4rem;
+    height: 1.4rem;
+    top: -5px;
+    left: -5px;
+  }
+  .main_button {
+    height: 35px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 35px !important;
+    height: 35px !important;
   }
 }

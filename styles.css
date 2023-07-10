@@ -437,6 +437,7 @@ nav {
   position: absolute;
   height: 100%;
   max-height: 830px;
+  width: 100%;
 }
 .index_section_4_pattern img {
   width: 100%;
@@ -1563,13 +1564,13 @@ footer li {
 }
 
 .burger_menu {
-  height: 100dvh;
+  height: calc(100dvh - 80px);
   position: fixed;
   width: 100%;
   overflow: hidden;
   top: 0;
   padding-left: 5rem;
-  padding-top: calc(80px + 5rem);
+  padding-top: calc(80px + 4rem);
   z-index: 500;
   color: white;
   display: flex;
@@ -2205,7 +2206,11 @@ footer li {
   .index_section_8_grid {
     max-width: calc(100% - 1rem);
   }
+  .burger_menu {
+    padding-left: 2rem;
+  }
 }
+
 @media only screen and (max-width: 282px) {
   html {
     font-size: 65%;

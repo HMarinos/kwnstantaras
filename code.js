@@ -28,9 +28,3 @@ window.onresize = function () {
     document.querySelector(".trigger_button").click();
   }
 };
-
-// function mobile_dropdown() {
-//   document
-//     .querySelector(".navigation_dropdown")
-//     .classList.toggle("toggle_mobile_dropdown");
-// }

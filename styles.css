@@ -54,9 +54,10 @@ a {
   left: 0;
   z-index: 900;
   width: 100%;
-  left: -100%;
+  opacity: 0;
   transition: all 0.3s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.98);
+  background-color: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
 }
 
 .navigation_dropdown_container ul,
@@ -68,10 +69,11 @@ a {
 }
 
 .proionta_hover:hover .navigation_dropdown {
-  left: 0;
+  opacity: 1;
+  pointer-events: all;
 }
 .dropdown_active .navigation_dropdown {
-  left: 0 !important;
+  opacity: 1 !important;
 }
 
 .navigation_dropdown_container {
@@ -1005,7 +1007,7 @@ footer {
   flex-direction: column-reverse;
   align-items: center;
   position: absolute;
-  right: -1rem;
+  right: 0;
   bottom: 1.2rem;
 }
 .arrow-text {
@@ -1017,15 +1019,16 @@ footer {
 .back_to_top_arrow {
   display: flex;
   justify-content: center;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
   transition: all 0.3s ease;
 }
 .back_to_top {
-  transform: rotate(-90deg);
+  writing-mode: vertical-lr;
   margin-bottom: 7rem;
   font-size: 1.5rem;
-  width: 160px;
+  transform: rotate(180deg);
   transition: all 0.3s ease;
+  margin: 0 auto 3rem;
 }
 /* .back_to_top {
   position: absolute;
@@ -1069,6 +1072,9 @@ footer li a {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+footer li a:hover {
+  color: var(--gold-color);
 }
 .footer_container {
   display: flex;
@@ -1547,9 +1553,8 @@ footer li {
 .header {
   height: 80px;
   background: #00000085 0% 0% no-repeat padding-box;
-
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px) !important;
+  -webkit-backdrop-filter: blur(30px) !important;
 }
 .header .above_nav_info {
   display: none;
@@ -1627,10 +1632,61 @@ footer li {
   display: none;
   transition: 0.3s all ease;
   cursor: pointer;
+  height: 27px;
+  width: 27px;
+  margin: 50px;
+  overflow: visible;
+  position: relative;
+  z-index: 2;
 }
 
-.on_air_design .toggle_burger {
-  transform: rotate(45deg) scale(1.2) !important;
+.open_burger span,
+.open_burger span:before,
+.open_burger span:after {
+  background: #fff;
+  display: block;
+  height: 2px;
+  opacity: 1;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+}
+.open_burger span:before,
+.open_burger span:after {
+  content: "";
+}
+
+.open_burger span:before {
+  left: 0px;
+  top: -10px;
+  width: 27px;
+}
+.open_burger span {
+  right: 0px;
+  top: 13px;
+  width: 27px;
+}
+.open_burger span:after {
+  left: 0px;
+  top: 10px;
+  width: 27px;
+}
+
+.on_air_design .toggle_burger span:before {
+  top: 0px;
+  transform: rotate(90deg);
+  width: 27px;
+}
+.on_air_design .toggle_burger span {
+  transform: rotate(-45deg);
+  top: 13px;
+  width: 27px;
+}
+.on_air_design .toggle_burger span:after {
+  top: 0px;
+  left: 0;
+  transform: rotate(90deg);
+  opacity: 0;
+  width: 0;
 }
 
 .hide_overflow {
@@ -1725,7 +1781,7 @@ footer li {
     margin-right: 2rem;
   }
   .mess-top {
-    right: -2rem;
+    right: 0;
   }
 }
 @media only screen and (max-width: 1500px) {
@@ -2286,8 +2342,5 @@ footer li {
   }
   .mess-top {
     bottom: 10rem;
-  }
-  .back_to_top {
-    margin-bottom: 10rem;
   }
 }

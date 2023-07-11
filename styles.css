@@ -47,17 +47,35 @@ a {
   width: 35px;
   height: 35px;
 }
+.get_blured {
+  width: 100%;
+  height: 324px;
+  background: #00000085 0% 0% no-repeat padding-box;
+  backdrop-filter: blur(30px) !important;
+  -webkit-backdrop-filter: blur(30px) !important;
+  position: fixed;
+  top: 132px;
+  z-index: 800;
+  opacity: 0;
+}
+.get_blured_after {
+  top: 80px;
+  pointer-events: none;
+}
 
 .navigation_dropdown {
   position: fixed;
   top: 132px;
   left: 0;
+  height: 324px;
   z-index: 900;
   width: 100%;
   opacity: 0;
-  transition: all 0.3s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.4);
   pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+.get_blured_blure {
+  opacity: 1;
 }
 
 .navigation_dropdown_container ul,
@@ -72,6 +90,7 @@ a {
   opacity: 1;
   pointer-events: all;
 }
+
 .dropdown_active .navigation_dropdown {
   opacity: 1 !important;
 }
@@ -467,16 +486,17 @@ nav {
 .mySwiper_1 {
   width: 90%;
 }
-.mySwiper_1 .swiper-slide {
+.mySwiper_1 .swiper-slide .wrap {
   text-align: center;
   font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  border-radius: 7px !important;
+  border-radius: 7px;
   cursor: pointer;
   z-index: 3;
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .index_section_4_intro div {
@@ -507,7 +527,6 @@ nav {
   width: 100%;
   height: auto;
   border-radius: 7px !important;
-  max-width: 283px;
 }
 
 .mySwiper_1 .swiper-slide h4 {
@@ -531,7 +550,7 @@ nav {
   transition: all 0.3s ease;
   font-size: 0.95rem;
 }
-.mySwiper_1 .swiper-slide::after {
+.mySwiper_1 .swiper-slide .wrap::after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -539,9 +558,8 @@ nav {
   width: 100%;
   background: transparent linear-gradient(180deg, #00000000 0%, #000000 60%) 0%
     0% no-repeat padding-box;
-  border-radius: 7px;
+
   transition: all 0.3s ease;
-  max-width: 283px;
 }
 .mySwiper_1 .swiper-slide:hover h4 {
   transform: translateY(-1.4rem);
@@ -549,16 +567,18 @@ nav {
 .mySwiper_1 .swiper-slide:hover .hidden_h4 {
   opacity: 1;
 }
-.mySwiper_1 .swiper-slide:hover::after {
+.mySwiper_1 .swiper-slide .wrap:hover::after {
   height: 40%;
 }
-.mySwiper_1 .swiper-slide {
-  max-width: 283px;
+
+.mySwiper_1 .swiper-slide img {
+  transition: 0.3s all ease-out;
+  width: 100%;
 }
-.mySwiper_1 .swiper-slide:hover {
+.mySwiper_1 .swiper-slide:hover img {
   transform: scale(1.1);
 }
-.mySwiper_1 .swiper-slide {
+.mySwiper_1 .wrap {
   overflow: hidden;
 }
 
@@ -1556,6 +1576,7 @@ footer li {
   backdrop-filter: blur(30px) !important;
   -webkit-backdrop-filter: blur(30px) !important;
 }
+
 .header .above_nav_info {
   display: none;
 }

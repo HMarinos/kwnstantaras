@@ -153,7 +153,11 @@
             <ul>
               <li><a href="">Αρχική</a></li>
               <li><a href="">Ποιοι Είμαστε</a></li>
-              <li onclick="toggle_dropdown()" class="proionta proionta_hover">
+              <li
+                onclick="toggle_dropdown()"
+                onmouseover="hover_proionta()"
+                class="proionta proionta_hover"
+              >
                 Προιόντα
                 <div class="navigation_dropdown" id="dropdown">
                   <div class="navigation_dropdown_container">
@@ -227,21 +231,11 @@
             <div class="open_burger" onclick="toggle_burger()">
               <span></span>
             </div>
-            <!-- <svg
-              onclick="toggle_burger()"
-              class="open_burger"
-              xmlns="http://www.w3.org/2000/svg"
-              height="1em"
-              viewBox="0 0 448 512"
-            >
-              <path
-                d="M240 64c0-8.8-7.2-16-16-16s-16 7.2-16 16V240H32c-8.8 0-16 7.2-16 16s7.2 16 16 16H208V448c0 8.8 7.2 16 16 16s16-7.2 16-16V272H416c8.8 0 16-7.2 16-16s-7.2-16-16-16H240V64z"
-              />
-            </svg> -->
           </div>
         </nav>
       </div>
     </header>
+    <div class="get_blured"></div>
 
     <section class="index_section_1">
       <div class="swiper mySwiper_0">
@@ -395,76 +389,14 @@
       <div class="swiper mySwiper_1 main_container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img
-              src=".//images/konstantaras_vitrina_adonis_patina_1_(1).png"
-              alt=""
-            />
-            <h4>Βιτρίνα</h4>
-            <div class="hidden_h4">Δέιτε τα προιόντα</div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src=".//images/konstantaras_vitrina_adonis_patina_1_(1).png"
-              alt=""
-            />
-            <h4>Βιτρίνα</h4>
-            <div class="hidden_h4">Δέιτε τα προιόντα</div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src=".//images/konstantaras_vitrina_adonis_patina_1_(1).png"
-              alt=""
-            />
-            <h4>Βιτρίνα</h4>
-            <div class="hidden_h4">Δέιτε τα προιόντα</div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src=".//images/konstantaras_vitrina_adonis_patina_1_(1).png"
-              alt=""
-            />
-            <h4>Βιτρίνα</h4>
-            <div class="hidden_h4">Δέιτε τα προιόντα</div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src=".//images/konstantaras_vitrina_adonis_patina_1_(1).png"
-              alt=""
-            />
-            <h4>Βιτρίνα</h4>
-            <div class="hidden_h4">Δέιτε τα προιόντα</div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src=".//images/konstantaras_vitrina_adonis_patina_1_(1).png"
-              alt=""
-            />
-            <h4>Βιτρίνα</h4>
-            <div class="hidden_h4">Δέιτε τα προιόντα</div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src=".//images/konstantaras_vitrina_adonis_patina_1_(1).png"
-              alt=""
-            />
-            <h4>Βιτρίνα</h4>
-            <div class="hidden_h4">Δέιτε τα προιόντα</div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src=".//images/konstantaras_vitrina_adonis_patina_1_(1).png"
-              alt=""
-            />
-            <h4>Βιτρίνα</h4>
-            <div class="hidden_h4">Δέιτε τα προιόντα</div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src=".//images/konstantaras_vitrina_adonis_patina_1_(1).png"
-              alt=""
-            />
-            <h4>Βιτρίνα</h4>
-            <div class="hidden_h4">Δέιτε τα προιόντα</div>
+            <div class="wrap">
+              <img
+                src=".//images/konstantaras_vitrina_adonis_patina_1_(1).png"
+                alt=""
+              />
+              <h4>Βιτρίνα</h4>
+              <div class="hidden_h4">Δέιτε τα προιόντα</div>
+            </div>
           </div>
         </div>
       </div>
@@ -1077,11 +1009,8 @@
         spaceBetween: 30,
         breakpoints: {
           665: { slidesPerView: 2 },
-          900: { slidesPerView: 2.5 },
           1027: { slidesPerView: 3 },
-          1160: { slidesPerView: 3.5 },
           1300: { slidesPerView: 4 },
-          1480: { slidesPerView: 4.5 },
           1620: { slidesPerView: 5 },
           1820: { slidesPerView: 5.5 },
         },

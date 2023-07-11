@@ -6,9 +6,11 @@ function scrollFunction() {
   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
     document.getElementById("header").classList.add("header");
     document.getElementById("dropdown").classList.add("dropdown_after");
+    document.querySelector(".get_blured").classList.add("get_blured_after");
   } else {
     document.getElementById("header").classList.remove("header");
     document.getElementById("dropdown").classList.remove("dropdown_after");
+    document.querySelector(".get_blured").classList.remove("get_blured_after");
   }
 }
 
@@ -42,3 +44,7 @@ function toggle_dropdown() {
     document.querySelector(".proionta").classList.toggle("dropdown_active");
   }
 }
+
+// function hover_proionta() {
+//   document.querySelector(".get_blured").classList.add("get_blured_blure");
+// }

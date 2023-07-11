@@ -550,6 +550,15 @@ nav {
 .mySwiper_1 .swiper-slide:hover::after {
   height: 40%;
 }
+.mySwiper_1 .swiper-slide {
+  max-width: 283px;
+}
+.mySwiper_1 .swiper-slide:hover {
+  transform: scale(1.1);
+}
+.mySwiper_1 .swiper-slide {
+  overflow: hidden;
+}
 
 /* -------------section_5-------------- */
 .index_section_5 {
@@ -1532,7 +1541,7 @@ footer li {
 .products_html .footer_container {
   padding-top: 0;
 }
-.products_html .products_section_1_navigation {
+.products_html footer .products_section_1_navigation {
   margin-bottom: 8rem;
 }
 .header {

@@ -45,6 +45,19 @@ function toggle_dropdown() {
   }
 }
 
-// function hover_proionta() {
-//   document.querySelector(".get_blured").classList.add("get_blured_blure");
-// }
+function hover_proionta() {
+  document.querySelector(".get_blured").classList.add("get_blured_blure");
+}
+
+let proionta = document.querySelector(".proionta");
+
+proionta.addEventListener("mouseleave", mouseLeave);
+proionta.addEventListener("mouseenter", mouseEnter);
+
+function mouseEnter() {
+  document.querySelector(".get_blured_blure").style.opacity = "1";
+}
+
+function mouseLeave() {
+  document.querySelector(".get_blured_blure").style.opacity = "0";
+}

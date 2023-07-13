@@ -73,7 +73,7 @@ a {
   width: 100%;
   opacity: 0;
   pointer-events: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
 }
 
 .navigation_dropdown_container ul,

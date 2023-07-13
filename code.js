@@ -61,3 +61,10 @@ function mouseEnter() {
 function mouseLeave() {
   document.querySelector(".get_blured_blure").style.opacity = "0";
 }
+
+function afunction() {
+  if (document.querySelector(".get_blured_blure")) {
+    document.querySelector(".get_blured").classList.remove("get_blured_blure");
+    // document.querySelector(".get_blured").style.opacity = "0";
+  }
+}

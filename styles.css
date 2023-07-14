@@ -1004,8 +1004,8 @@ nav {
   justify-content: center;
   align-items: center;
   margin-right: 6.4rem;
-  background: transparent url("./images/konstantaras_logo.png") 0% 0% no-repeat
-    padding-box;
+  /* background: transparent url("./images/konstantaras_logo.png") 0% 0% no-repeat
+    padding-box; */
   mix-blend-mode: exclusion;
 }
 

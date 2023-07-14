@@ -264,7 +264,9 @@ nav {
   height: 100%;
   border-right: 1px solid rgba(200, 200, 200, 0.5);
 }
-
+.logo {
+  max-width: 141.35px;
+}
 .on_air_design_button {
   background-color: white;
   color: black;

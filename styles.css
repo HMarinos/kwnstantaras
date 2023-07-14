@@ -1443,6 +1443,9 @@ footer li {
 .single_product .mySwiper_4 .swiper-slide {
   position: relative;
 }
+.mySwiper_4 .swiper-slide {
+  cursor: pointer;
+}
 
 .single_product .mySwiper_4 .swiper-slide img {
   filter: brightness(0.4);
@@ -1743,9 +1746,7 @@ footer li {
   height: 30px;
   margin-top: 5rem;
 }
-.burger_menu_wrapper {
-  font-size: 130%;
-}
+
 @media only screen and (max-width: 1700px) {
   .index_section_8_grid {
     grid-template-columns: 1fr 1fr 1fr;

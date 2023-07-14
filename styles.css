@@ -84,14 +84,48 @@ a {
   top: 80px;
 }
 
-.proionta_hover:hover .navigation_dropdown {
-  opacity: 1;
-  pointer-events: all;
+/* ---hover---- */
+
+@media (hover: hover) {
+  .proionta_hover:hover .navigation_dropdown {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .navigation_dropdown li a:hover {
+    color: var(--gold-color);
+  }
+  .navigation li:hover .dropdown_angle {
+    transform: rotate(90deg);
+    fill: var(--gold-color);
+  }
+  header li:hover {
+    color: var(--gold-color);
+  }
+  .navigation li:hover,
+  .header .above_nav_mininav li:hover {
+    border-bottom: 1px solid var(--gold-color);
+  }
+  .blur_opacity {
+    opacity: 1;
+  }
 }
 
-.dropdown_active .navigation_dropdown {
-  opacity: 1 !important;
+@media (hover: none) {
+  .proionta_clicked {
+    color: var(--gold-color);
+  }
+  .proionta_clicked .dropdown_angle {
+    transform: rotate(90deg);
+    fill: var(--gold-color);
+  }
+  .toggle_blure {
+    opacity: 1;
+  }
+  .dropdown_active .navigation_dropdown {
+    opacity: 1 !important;
+  }
 }
+/*-----hover-end-----*/
 
 .navigation_dropdown_container {
   display: grid;
@@ -102,10 +136,6 @@ a {
   margin: auto;
   padding: 4rem 4rem 3rem 4rem;
   color: white;
-}
-
-.navigation_dropdown li a:hover {
-  color: var(--gold-color);
 }
 
 .navigation_dropdown_container ul {
@@ -172,16 +202,11 @@ svg {
   border-bottom: 1px solid transparent;
   cursor: pointer;
 }
-.navigation li:hover .dropdown_angle {
-  transform: rotate(90deg);
-  fill: var(--gold-color);
-}
+
 .navigation li svg {
   transition: 0.3s ease all;
 }
-header li:hover {
-  color: var(--gold-color);
-}
+
 .navigation,
 .above_nav_mininav {
   height: 100%;
@@ -198,10 +223,6 @@ header li:hover {
 }
 .header .above_nav_mininav li {
   border-bottom: 1px solid transparent;
-}
-.navigation li:hover,
-.header .above_nav_mininav li:hover {
-  border-bottom: 1px solid var(--gold-color);
 }
 
 nav {
@@ -1059,6 +1080,12 @@ footer {
   transition: all 0.3s ease;
 } */
 
+.go_top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .go_top:hover .back_to_top {
   letter-spacing: 3.3px;
 }

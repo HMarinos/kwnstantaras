@@ -37,34 +37,25 @@ function isTouchDevice() {
     navigator.msMaxTouchPoints > 0
   );
 }
+let proionta = document.querySelector(".proionta");
 
 function toggle_dropdown() {
-  if (isTouchDevice()) {
-    document.querySelector(".proionta").classList.remove("proionta_hover");
-    document.querySelector(".proionta").classList.toggle("dropdown_active");
-  }
+  proionta.classList.toggle("dropdown_active");
+  proionta.classList.toggle("proionta_clicked");
+  document.querySelector(".get_blured_blure").classList.toggle("toggle_blure");
 }
 
 function hover_proionta() {
   document.querySelector(".get_blured").classList.add("get_blured_blure");
 }
 
-let proionta = document.querySelector(".proionta");
-
 proionta.addEventListener("mouseleave", mouseLeave);
 proionta.addEventListener("mouseenter", mouseEnter);
 
 function mouseEnter() {
-  document.querySelector(".get_blured_blure").style.opacity = "1";
+  document.querySelector(".get_blured_blure").classList.add("blur_opacity");
 }
 
 function mouseLeave() {
-  document.querySelector(".get_blured_blure").style.opacity = "0";
-}
-
-function afunction() {
-  if (document.querySelector(".get_blured_blure")) {
-    document.querySelector(".get_blured").classList.remove("get_blured_blure");
-    // document.querySelector(".get_blured").style.opacity = "0";
-  }
+  document.querySelector(".get_blured_blure").classList.remove("blur_opacity");
 }

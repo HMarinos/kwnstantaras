@@ -259,11 +259,10 @@ nav {
   display: flex;
   align-items: center;
 }
-.logo {
-  border-right: 1px solid rgba(200, 200, 200, 0.5);
-}
+
 .logo img {
   height: 100%;
+  border-right: 1px solid rgba(200, 200, 200, 0.5);
 }
 
 .on_air_design_button {

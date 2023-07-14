@@ -21,7 +21,6 @@ function toggle_burger() {
 }
 
 window.onresize = function () {
-  console.log(screen.width);
   if (screen.width > 1140) {
     document.querySelector(".burger_menu").classList.remove("burger_active");
     document.querySelector(".open_burger").classList.remove("toggle_burger");

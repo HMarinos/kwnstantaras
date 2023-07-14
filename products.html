@@ -17,7 +17,7 @@
             <div class="above_nav_social">
               <ul>
                 <li>
-                  <a href=""
+                  <a class="facebook_icon" href=""
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
                       height="1em"
@@ -29,7 +29,7 @@
                   ></a>
                 </li>
                 <li>
-                  <a href=""
+                  <a class="twitter_icon" href=""
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
                       height="1em"
@@ -66,9 +66,13 @@
             <ul>
               <li><a href="">Αρχική</a></li>
               <li><a href="">Ποιοι Είμαστε</a></li>
-              <li class="proionta">
-                <a href="">Προιόντα</a>
-                <div class="navigation_dropdown">
+              <li
+                onclick="toggle_dropdown()"
+                onmouseover="hover_proionta()"
+                class="proionta proionta_hover"
+              >
+                Προιόντα
+                <div class="navigation_dropdown" id="dropdown">
                   <div class="navigation_dropdown_container">
                     <ul>
                       <li><a href="">Ανάκλινδρο</a></li>
@@ -103,6 +107,7 @@
                   </div>
                 </div>
                 <svg
+                  class="dropdown_angle"
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 320 512"
@@ -136,10 +141,14 @@
               ></lottie-player
               >On Air Design</a
             >
+            <div class="open_burger" onclick="toggle_burger()">
+              <span></span>
+            </div>
           </div>
         </nav>
       </div>
     </header>
+    <div class="get_blured"></div>
     <div class="products_section_1_2">
       <section class="products_section_1">
         <div class="products_section_1_container">

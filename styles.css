@@ -4,6 +4,9 @@
   scroll-behavior: smooth;
   font-family: "manrope";
 }
+.dontoverflow {
+  overflow-x: hidden;
+}
 body {
   overflow-x: hidden;
 }
@@ -58,6 +61,7 @@ a {
   z-index: 800;
   opacity: 0;
   transition: 0.35s all ease;
+  pointer-events: none;
 }
 .get_blured_after {
   top: 80px;
@@ -293,7 +297,7 @@ nav {
   height: auto;
 }
 .index_section_1_container {
-  height: calc(100dvh - 133px);
+  height: calc(100vh - 133px);
 
   overflow: hidden;
 }
@@ -1641,7 +1645,7 @@ footer li {
 }
 
 .burger_menu {
-  height: calc(100dvh - 80px);
+  height: calc(100vh - 80px);
   position: fixed;
   width: 100%;
   overflow: hidden;
@@ -1676,7 +1680,7 @@ footer li {
 }
 .burger_menu_header ul li,
 .burger_menu_main ul li {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .open_burger {
   display: none;
@@ -1795,7 +1799,7 @@ footer li {
   .index_html,
   .products_html header,
   .single_product header {
-    font-size: 80%;
+    font-size: 89%;
   }
   .on_air_design_button {
     width: 200px;

@@ -36,6 +36,13 @@ function isTouchDevice() {
     navigator.msMaxTouchPoints > 0
   );
 }
+document
+  .querySelector(".navigation ul li:nth-child(3)")
+  .classList.add("proionta");
+document
+  .querySelector(".navigation ul li:nth-child(3)")
+  .classList.add("proionta_hover");
+
 let proionta = document.querySelector(".proionta");
 
 function toggle_dropdown() {

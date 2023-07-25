@@ -62,3 +62,6 @@ function mouseLeave() {
 document
   .querySelector(".navigation ul li:nth-child(3)")
   .addEventListener("click", toggle_dropdown);
+document
+  .querySelector(".navigation ul li:nth-child(3)")
+  .addEventListener("mouseover", hover_proionta);

@@ -58,3 +58,7 @@ function mouseEnter() {
 function mouseLeave() {
   document.querySelector(".get_blured_blure").classList.remove("blur_opacity");
 }
+
+document
+  .querySelector(".navigation ul li:nth-child(3)")
+  .addEventListener("click", toggle_dropdown);

@@ -1752,6 +1752,22 @@ footer li {
   margin-top: 5rem;
 }
 
+/* --------contact-------- */
+
+.contact_container {
+  max-width: 1450px;
+  margin: auto;
+  width: 100%;
+}
+.contact_main {
+  display: flex;
+  justify-content: space-between;
+}
+.contact_form form {
+  display: flex;
+  flex-direction: column;
+}
+
 @media only screen and (max-width: 1700px) {
   .index_section_8_grid {
     grid-template-columns: 1fr 1fr 1fr;

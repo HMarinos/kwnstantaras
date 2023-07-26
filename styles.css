@@ -1760,6 +1760,7 @@ footer li {
   margin: auto;
   width: 100%;
   margin-top: 3rem;
+  margin-bottom: 5rem;
 }
 .bar_container h1 {
   color: #beb499;
@@ -1819,8 +1820,7 @@ footer li {
   align-items: center;
   max-width: 735px;
   width: 100%;
-  /* background-color: #fbfbfb; */
-  background-color: red;
+  background-color: #fbfbfb;
 }
 .contact_info ul {
   max-width: 600px;

@@ -2093,10 +2093,38 @@ footer li {
   z-index: 10000;
   border-radius: 5px;
 }
-/* ----stores----- */
+/* ----on_air----- */
+.on_air_main_container {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
 
-.stores .index_section_5_main {
-  margin-inline: auto;
+.on_air_right :is(h2, h3) {
+  margin-block: 1rem;
+}
+.on_air_right h3 {
+  color: #707070;
+  font-size: 0.9rem;
+}
+.on_air_right h2 {
+  font-weight: bold;
+  font-size: 1.875rem;
+}
+.on_air_right p {
+  margin-bottom: 1rem;
+  color: #707070;
+  font-size: 0.9rem;
+}
+.on_air_right button {
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 800;
+  margin-top: 4rem;
 }
 
 /* -------media------- */

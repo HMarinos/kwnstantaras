@@ -1949,7 +1949,9 @@ footer li {
   max-width: 1322px;
 }
 .single_project_main {
+  margin-top: 2rem;
   padding-inline: 2rem;
+  margin-bottom: 160px;
 }
 
 .single_project_wrapper img {

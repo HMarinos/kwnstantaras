@@ -7,6 +7,10 @@
 .dontoverflow {
   overflow-x: hidden;
 }
+.main_button:hover {
+  background-color: #beb499;
+  border: #beb499;
+}
 body {
   overflow-x: hidden;
 }
@@ -45,6 +49,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .on_air_design svg {
   width: 35px;
@@ -1993,6 +1998,7 @@ footer li {
   margin: auto;
   width: 100%;
   justify-content: space-between;
+  margin-top: 4rem;
 }
 .blog_main_container .blog_left {
   display: grid;
@@ -2188,6 +2194,13 @@ footer li {
     width: 100%;
     max-height: 100%;
   }
+  .blog_main_container .blog_left {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blog_main_container {
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
 }
 
 @media only screen and (max-width: 1560px) {
@@ -2353,6 +2366,17 @@ footer li {
     width: 100%;
     max-width: 30rem;
     height: auto;
+  }
+  .blog_main_container {
+    flex-direction: column-reverse;
+  }
+  .blog_main_container .blog_left {
+    place-items: center;
+  }
+  .blog_right {
+    flex-direction: row;
+    margin-left: 8.5rem;
+    max-width: 600px;
   }
 }
 
@@ -2541,6 +2565,13 @@ footer li {
   .section_2_img img {
     width: unset !important;
   }
+  .blog_main_container .blog_left {
+    grid-template-columns: 1fr;
+  }
+  .blog_right {
+    flex-direction: column;
+    max-width: 320px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -2638,6 +2669,10 @@ footer li {
   }
   .projects_main {
     padding-inline: 1.5rem;
+  }
+  .blog_right {
+    margin-inline: auto;
+    padding-inline-start: 1rem;
   }
 }
 

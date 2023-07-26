@@ -2062,6 +2062,7 @@ footer li {
 /* -----catalogues----- */
 .catalogues_main {
   margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 .catalogues_main_container {
   margin: auto;

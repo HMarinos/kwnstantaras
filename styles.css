@@ -711,7 +711,8 @@ nav {
   padding-bottom: 1.9rem;
   padding-top: 9rem;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
   z-index: 30;
   width: 100%;
   justify-content: space-between;
@@ -801,9 +802,6 @@ nav {
 .section_6_box_main a:hover {
   background-color: var(--gold-color);
   border-color: var(--gold-color);
-}
-.section_6_box_title {
-  padding-left: 3rem;
 }
 
 .section_6_box_title div {
@@ -1842,13 +1840,13 @@ footer li {
   flex-direction: column;
   margin-bottom: 1rem;
 }
-.contact_page .bar {
+.bar {
   width: 100%;
   background-color: black;
   color: white;
   padding-block: 2.5rem;
 }
-.contact_page .bar ul {
+.bar ul {
   display: flex;
   gap: 0.2rem;
 }
@@ -1868,6 +1866,71 @@ footer li {
 }
 .contact_info {
   font-weight: 600;
+}
+
+/* ------projects------ */
+
+.section_6_box_title,
+.section_6_box_main .main_button {
+  margin-left: 2rem;
+}
+.projects .section_6_box_main {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 1.9rem;
+  padding-top: 9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 30;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.projects .swiper-slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 532px;
+  max-height: 372px;
+  position: relative;
+  border-radius: 7px;
+}
+.projects .swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+}
+.projects .section_6_box_main ::after {
+  width: 100%;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: transparent linear-gradient(182deg, #00000000 38%, #000000 100%)
+    0% 0% no-repeat padding-box;
+  z-index: -1;
+  border-radius: 0 0 7px 7px;
+}
+.projects_main {
+  color: white;
+}
+.projects .swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+}
+
+.projects_main {
+  padding-inline: 2rem;
+  margin-top: 3.5rem;
+}
+
+.projects_main_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  gap: 1rem;
 }
 
 @media only screen and (max-width: 1700px) {
@@ -1906,10 +1969,6 @@ footer li {
   }
   .section_6_box_main a {
     margin-right: 1.5rem;
-  }
-  .section_6_box_title {
-    padding-left: 1.5rem;
-    padding-right: 1rem;
   }
 }
 

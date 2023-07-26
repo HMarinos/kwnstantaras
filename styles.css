@@ -2000,6 +2000,9 @@ footer li {
   row-gap: 2rem;
   column-gap: 1rem;
 }
+.blog_main {
+  margin-bottom: 160px;
+}
 
 .related_blogs {
   display: flex;

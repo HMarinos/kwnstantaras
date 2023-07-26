@@ -1845,6 +1845,7 @@ footer li {
   background-color: black;
   color: white;
   padding-block: 2.5rem;
+  margin-top: 132px;
 }
 .bar ul {
   display: flex;
@@ -1914,6 +1915,7 @@ footer li {
 }
 .projects_main {
   color: white;
+  margin-bottom: 160px;
 }
 .projects .swiper-slide img {
   width: 100%;
@@ -2166,6 +2168,14 @@ footer li {
   .section_6_box_main a {
     margin-right: 1.5rem;
   }
+  .projects_main_container {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+  .projects .swiper-slide {
+    width: 100%;
+    max-height: 100%;
+  }
 }
 
 @media only screen and (max-width: 1560px) {
@@ -2367,6 +2377,9 @@ footer li {
   .products_html .box_title h2 {
     font-size: 1.2rem;
   }
+  .bar {
+    margin-top: 80px;
+  }
 }
 @media only screen and (max-width: 1080px) {
   .index_section_6 {
@@ -2388,6 +2401,14 @@ footer li {
   }
   .products_section_2_container {
     grid-template-columns: 1fr 1fr;
+  }
+  .projects_main_container {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .projects .swiper-slide {
+    max-width: 532px;
+    max-height: 372px;
   }
 }
 
@@ -2598,6 +2619,13 @@ footer li {
   }
   .main_button {
     height: 45px;
+  }
+  .section_6_box_title,
+  .section_6_box_main .main_button {
+    margin-left: 1.5rem;
+  }
+  .projects_main {
+    padding-inline: 1.5rem;
   }
 }
 

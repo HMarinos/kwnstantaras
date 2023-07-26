@@ -1981,6 +1981,44 @@ footer li {
   margin-top: 5rem;
 }
 
+/* -----------blog----------- */
+
+.blog_main_container {
+  display: flex;
+  max-width: 1695px;
+  margin: auto;
+  width: 100%;
+  justify-content: space-between;
+}
+.blog_main_container .blog_left {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+  column-gap: 1rem;
+}
+
+.related_blogs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+.blog_right {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.blog_right h3 {
+  font-size: 1.875rem;
+  color: #beb499;
+  margin-bottom: 1.5rem;
+}
+.blog_categories ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 /* -------media------- */
 
 @media only screen and (max-width: 1700px) {

@@ -2093,6 +2093,11 @@ footer li {
   z-index: 10000;
   border-radius: 5px;
 }
+/* ----stores----- */
+
+.stores .index_section_5_main {
+  margin-inline: auto;
+}
 
 /* -------media------- */
 

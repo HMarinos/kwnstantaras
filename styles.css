@@ -2135,7 +2135,9 @@ footer li {
   font-weight: 800;
   margin-top: 4rem;
 }
-
+.stores .index_section_5 {
+  padding-top: 5rem;
+}
 /* -------media------- */
 
 @media only screen and (max-width: 1700px) {

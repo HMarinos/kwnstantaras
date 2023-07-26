@@ -2069,6 +2069,7 @@ footer li {
 .catalogues_main {
   margin-top: 5rem;
   margin-bottom: 5rem;
+  padding-inline: 2rem;
 }
 .catalogues_main_container {
   margin: auto;
@@ -2377,6 +2378,10 @@ footer li {
     flex-direction: row;
     margin-left: 8.5rem;
     max-width: 600px;
+  }
+  .catalogues_main_container {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 

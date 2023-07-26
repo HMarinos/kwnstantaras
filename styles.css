@@ -1774,6 +1774,7 @@ footer li {
 .contact_main {
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
 }
 .contact_form form {
   display: flex;
@@ -1832,6 +1833,8 @@ footer li {
   width: 100%;
   margin: auto;
   padding-inline: 2rem;
+  font-weight: 600;
+  padding-block: 2rem;
 }
 .onoma_kinito {
   display: flex;
@@ -1869,9 +1872,6 @@ footer li {
 .contact_info ul li:last-child {
   text-decoration: underline;
   padding-top: 1rem;
-}
-.contact_info {
-  font-weight: 600;
 }
 
 /* ------projects------ */
@@ -2577,6 +2577,11 @@ footer li {
     flex-direction: column;
     max-width: 320px;
   }
+  .contact_main {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -2704,6 +2709,9 @@ footer li {
   .back_to_top {
     font-size: 1.4rem;
   }
+  .contact {
+    padding-inline: 1rem;
+  }
 }
 
 @media only screen and (max-width: 420px) {
@@ -2790,6 +2798,12 @@ footer li {
   }
   .burger_menu {
     padding-left: 2rem;
+  }
+  .onoma_kinito {
+    flex-direction: column;
+  }
+  .onoma_kinito input {
+    width: auto;
   }
 }
 

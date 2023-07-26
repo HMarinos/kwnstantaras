@@ -1817,6 +1817,11 @@ footer li {
   color: white;
   font-weight: 800;
   font-size: 1.125rem;
+  cursor: pointer;
+}
+.contact_form button:hover {
+  background-color: var(--gold-color);
+  border: var(--gold-color);
 }
 .contact_form textarea {
   margin-bottom: 2rem;
@@ -1991,6 +1996,9 @@ footer li {
 }
 
 /* -----------blog----------- */
+.blog_wrapper {
+  padding-inline: 2rem;
+}
 
 .blog_main_container {
   display: flex;
@@ -2009,7 +2017,6 @@ footer li {
 .blog_main {
   margin-bottom: 160px;
   margin-top: 2rem;
-  padding-inline: 2rem;
 }
 
 .related_blogs {

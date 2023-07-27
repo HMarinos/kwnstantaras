@@ -72,8 +72,24 @@ a {
   top: 80px;
   pointer-events: none;
 }
+.wp-drop {
+  position: fixed;
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr);
+  top: 132px;
+  width: 85%;
+  margin-inline: auto;
+  left: 0;
+  right: 0;
+  height: 324px !important;
+  gap: 1rem !important;
+  padding-block: 2rem;
+  z-index: 900;
+  opacity: 0;
+  pointer-events: none;
+}
 
-.navigation_dropdown {
+/* .navigation_dropdown {
   position: fixed;
   top: 132px;
   left: 0;
@@ -83,36 +99,50 @@ a {
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease;
+} */
+
+.burger_menu ul li a:hover {
+  color: var(--gold-color);
 }
 
-.navigation_dropdown_container ul,
-.navigation_dropdown_container li {
+.wp-drop,
+.wp-drop li {
   height: unset !important;
 }
 .dropdown_after {
   top: 80px;
 }
-
 /* ---hover---- */
 
 @media (hover: hover) {
-  .proionta_hover:hover .navigation_dropdown {
+  .proionta_hover:hover .wp-drop {
     opacity: 1;
     pointer-events: all;
   }
-  .navigation_dropdown li a:hover {
+  .wp-drop li a:hover {
     color: var(--gold-color);
   }
   .navigation li:hover .dropdown_angle {
     transform: rotate(90deg);
     fill: var(--gold-color);
   }
-  header li:hover {
+
+  header li {
+    color: white;
+  }
+  header .navigation > ul > li:hover {
     color: var(--gold-color);
   }
+
   .navigation li:hover,
   .header .above_nav_mininav li:hover {
     border-bottom: 1px solid var(--gold-color);
+  }
+  .wp-drop li:hover {
+    border-bottom: none !important;
+  }
+  .wp-drop li {
+    border-bottom: none !important;
   }
   .blur_opacity {
     opacity: 1;
@@ -123,6 +153,9 @@ a {
   .proionta_clicked {
     color: var(--gold-color);
   }
+  .wp-drop li {
+    color: white !important;
+  }
   .proionta_clicked .dropdown_angle {
     transform: rotate(90deg);
     fill: var(--gold-color);
@@ -130,13 +163,13 @@ a {
   .toggle_blure {
     opacity: 1;
   }
-  .dropdown_active .navigation_dropdown {
+  .dropdown_active .wp-drop {
     opacity: 1 !important;
   }
 }
 /*-----hover-end-----*/
 
-.navigation_dropdown_container {
+/* .navigation_dropdown_container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   max-width: 1326px;
@@ -155,7 +188,7 @@ a {
 }
 .navigation_dropdown_container :is(li, li a) {
   border-bottom: none !important;
-}
+} */
 
 header {
   position: fixed;
@@ -2437,6 +2470,9 @@ footer li {
   }
   .bar {
     margin-top: 80px;
+  }
+  .get_blured {
+    display: none;
   }
 }
 @media only screen and (max-width: 1080px) {

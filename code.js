@@ -2,6 +2,14 @@ window.onscroll = function () {
   scrollFunction();
 };
 
+document
+  .querySelector(".navigation ul li:nth-child(3) ul")
+  .classList.add("wp-drop");
+
+document
+  .querySelector(".navigation ul li:nth-child(3) ul")
+  .setAttribute("id", "dropdown");
+
 function scrollFunction() {
   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
     document.getElementById("header").classList.add("header");
@@ -36,6 +44,7 @@ function isTouchDevice() {
     navigator.msMaxTouchPoints > 0
   );
 }
+
 document
   .querySelector(".navigation ul li:nth-child(3)")
   .classList.add("proionta");

@@ -9,7 +9,7 @@
 }
 .main_button:hover {
   background-color: #beb499;
-  border: #beb499;
+  border: 1px solid #beb499;
 }
 body {
   overflow-x: hidden;
@@ -380,7 +380,7 @@ nav {
 }
 .index_section_1 a:hover {
   background-color: var(--gold-color);
-  border-color: var(--gold-color);
+  border: 1px solid var(--gold-color);
 }
 
 .mySwiper_0 .swiper-pagination-bullet {
@@ -547,7 +547,7 @@ nav {
   z-index: 100;
 }
 .section_4_button a:hover {
-  border-color: var(--gold-color);
+  border: 1px solid var(--gold-color);
   background-color: var(--gold-color);
   color: white;
 }
@@ -806,7 +806,7 @@ nav {
 }
 .section_6_box_main a:hover {
   background-color: var(--gold-color);
-  border-color: var(--gold-color);
+  border: 1px solid var(--gold-color);
 }
 
 .section_6_box_title div {
@@ -880,7 +880,7 @@ nav {
 }
 .section_7_intro a:hover {
   background-color: var(--gold-color);
-  border-color: var(--gold-color);
+  border: 1px solid var(--gold-color);
   color: white;
 }
 
@@ -964,7 +964,7 @@ nav {
 }
 .index_section_8 a:hover {
   background-color: var(--gold-color);
-  border-color: var(--gold-color);
+  border: 1px solid var(--gold-color);
   color: white;
 }
 
@@ -1582,7 +1582,7 @@ footer li {
 .single_product .interested_link a:hover {
   background: transparent linear-gradient(180deg, #beb499 0%, #a7a5a2 100%) 0%
     0% no-repeat padding-box;
-  border-color: #beb499;
+  border: 1px solid var(--gold-color);
 }
 
 .single_product .boufe a {

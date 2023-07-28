@@ -1,7 +1,50 @@
 window.onscroll = function () {
   scrollFunction();
 };
-
+window.onload = () => {
+  var swiper = new Swiper(".mySwiper_0", {
+    direction: "horizontal",
+    breakpoints: {
+      1000: {
+        direction: "vertical",
+      },
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+  var swiper = new Swiper(".mySwiper_1", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    breakpoints: {
+      665: { slidesPerView: 2 },
+      1027: { slidesPerView: 3 },
+      1300: { slidesPerView: 4 },
+      1620: { slidesPerView: 5 },
+      1820: { slidesPerView: 5.5 },
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+  var swiper = new Swiper(".mySwiper_2", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    slidesPerView: 1,
+    breakpoints: {
+      960: { slidesPerView: 2 },
+      1460: { slidesPerView: 3 },
+    },
+    spaceBetween: 30,
+    parallax: true,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+};
 document
   .querySelector(".navigation ul li:nth-child(3) ul")
   .classList.add("wp-drop");

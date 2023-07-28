@@ -2208,6 +2208,9 @@ footer li {
   padding-inline: 2rem;
   padding-block: 2rem;
 }
+.who_we_are .index_section_2_main p {
+  color: #000000;
+}
 .who_we_are .index_section_2 {
   margin-bottom: 0;
 }
@@ -2361,6 +2364,10 @@ footer li {
   }
   .index_section_6 {
     padding: 0 4rem;
+  }
+  .who_we_are .index_section_2_main {
+    inset: 0;
+    margin: auto;
   }
 }
 @media only screen and (max-width: 1330px) {
@@ -2531,6 +2538,9 @@ footer li {
   .projects .swiper-slide {
     max-width: 532px;
     max-height: 372px;
+  }
+  .who_we_are .section_2_img img {
+    width: unset !important;
   }
 }
 
